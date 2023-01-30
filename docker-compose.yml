@@ -1,0 +1,77 @@
+version: '3.9'
+
+services:
+  postgresql:
+    container_name: postgresql
+    image: postgres
+    networks:
+      - atlassian_network
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data
+      - ./scripts/postgresql/create_jira_db.sh:/docker-entrypoint-initdb.d/create_jira_db.sh
+      - ./scripts/postgresql/create_bitbucket_db.sh:/docker-entrypoint-initdb.d/create_bitbucket_db.sh
+      - ./scripts/postgresql/create_confluence_db.sh:/docker-entrypoint-initdb.d/create_confluence_db.sh
+      - ./scripts/postgresql/create_bamboo_db.sh:/docker-entrypoint-initdb.d/create_bamboo_db.sh
+    ports:
+      - '5432:5432'
+    env_file: ./envs/postgresql.env
+
+  jira:
+    container_name: jira
+    depends_on:
+      - postgresql
+    image: atlassian/jira-software:latest
+    networks:
+       - atlassian_network
+    volumes:
+      - ./jira:/var/atlassian/application-data/jira
+    ports:
+      - '8080:8080'
+      - '8000:8000'
+    env_file: ./envs/jira.env
+
+  bitbucket:
+    container_name: bitbucket
+    depends_on:
+      - postgresql
+    image: atlassian/bitbucket-server:latest
+    networks:
+       - atlassian_network
+    volumes:
+      - ./bitbucket:/var/atlassian/application-data/bitbucket
+    ports:
+      - '7990:7990'
+      - '5005:5005'
+    env_file: ./envs/bitbucket.env
+
+  confluence:
+    container_name: confluence
+    depends_on:
+      - postgresql
+    image: atlassian/confluence-server:latest
+    networks:
+       - atlassian_network
+    volumes:
+      - ./confluence:/var/atlassian/application-data/confluence
+    ports:
+      - '8090:8090'
+      - '8091:8091'
+    env_file: ./envs/confluence.env
+
+  bamboo:
+    container_name: bamboo
+    depends_on:
+      - postgresql
+    image: atlassian/bamboo-server:latest
+    networks:
+       - atlassian_network
+    volumes:
+      - ./bamboo:/var/atlassian/application-data/bamboo
+    ports:
+      - '8085:8085'
+      - '54663:54663'
+    env_file: ./envs/bamboo.env
+
+networks:
+  atlassian_network:
+    driver: bridge
