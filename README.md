@@ -24,4 +24,4 @@ java -jar atlassian-bamboo-agent-installer-9.1.1.jar http://localhost:8085/agent
 
 **Attention: Create the application link using the service name, not localhost nor container name AND after installing each server**
 
-**TODO: Link Jira with Bitbucket/Bamboo**
+## TODO: Link Jira with Bitbucket/Bamboo
