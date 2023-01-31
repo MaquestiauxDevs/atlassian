@@ -42,6 +42,7 @@ services:
     ports:
       - '7990:7990'
       - '5005:5005'
+      - '7999:7999'
     env_file: ./envs/bitbucket.env
 
   confluence:
