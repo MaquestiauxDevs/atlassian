@@ -1,2 +1,1 @@
-sudo rm -Rf postgresql jira bitbucket confluence bamboo 
-mkdir postgresql jira bitbucket confluence bamboo
+cd .. ; sudo rm -Rf postgresql jira bitbucket confluence bamboo ; mkdir postgresql jira bitbucket confluence bamboo
