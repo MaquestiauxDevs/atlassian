@@ -86,7 +86,6 @@ services:
      - "80:80" 
     networks: 
       atlassian_network:
-      default: 
         aliases:
          - jira.internal
          - confluence.internal
