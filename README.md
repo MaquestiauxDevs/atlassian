@@ -68,7 +68,7 @@ https://confluence.atlassian.com/bamboo/bamboo-remote-agent-installation-guide-2
 Run agent server
 
 ```shell
-java -jar atlassian-bamboo-agent-installer-9.1.1.jar http://localhost:8085/agentServer/
+java -jar atlassian-bamboo-agent-installer-9.1.1.jar http://bamboo.internal/agentServer/
 ```
 
 ## Application Link
