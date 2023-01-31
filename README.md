@@ -37,17 +37,31 @@ Finally, run the docker compose command:
 docker compose up --build -d
 ```
 
+Wait a few minutes, letting the different services to fullt start
+
+## NgInx
+
+Used to proxy the different apps
+
 ## Postgresql (port:5432)
 
 ***!! 2023-01-31 Postgres 15 is not supported, using postgres 14.6 !!***
 
-## JIRA (port:8080)
+## JIRA (port:8080, proxied by ngInx)
 
-## BitBucket (port:7990)
+http://jira.internal/
 
-## Confluence (port:8090)
+## BitBucket (port:7990, proxied by ngInx)
 
-## Bamboo (port:8085)
+http://bitbucket.internal
+
+## Confluence (port:8090, proxied by ngInx)
+
+http://confluence.internal
+
+## Bamboo (port:8085, proxied by ngInx)
+
+http://bamboo.internal
 
 https://confluence.atlassian.com/bamboo/bamboo-remote-agent-installation-guide-289276832.html
 
