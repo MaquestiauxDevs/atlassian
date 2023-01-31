@@ -59,15 +59,11 @@ java -jar atlassian-bamboo-agent-installer-9.1.1.jar http://localhost:8085/agent
 
 ## Application Link
 
-https://community.atlassian.com/t5/Jira-articles/Running-Atlassian-server-product-on-Docker/ba-p/1209665
+Links the differents application through the jira
 
-2023-01-31: Requested confirmation that "unfortunately, Atlassian's docker images don't support the configuration to the application link"
+http://jira.internal/plugins/servlet/applinks/listApplicationLinks
+http://jira.internal/secure/admin/jira/ViewBambooApplicationLinks.jspa
 
-When trying to add the application link between JIRA and BITBUCKET is failling...
-
-```
-We couldn't connect to Bitbucket, possibly because that instance is behind a misconfigured proxy.
-
-We couldn't connect to Jira, possibly because that instance is behind a misconfigured proxy.
-
- ```
+http://bitbucket.internal/plugins/servlet/applinks/listApplicationLinks
+http://confluence.internal/plugins/servlet/applinks/listApplicationLinks
+http://bamboo.internal/plugins/servlet/applinks/listApplicationLinks
