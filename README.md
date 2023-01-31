@@ -6,14 +6,20 @@ You will need to request trial keys via: https://my.atlassian.com/license/evalua
 
 ## Specific 
 
-Add the following lines to the /etc/host of your machine before starting
+Add host lines to the /etc/host of your machine before starting
+
+You can run the following command (for linux based os)
 
 ```
+sudo echo "
+
 # For Docker Atlassian
 127.0.0.1 jira.internal
 127.0.0.1 confluence.internal
 127.0.0.1 bitbucket.internal
 127.0.0.1 bamboo.internal
+
+" >> /etc/hosts
 ```
 
 Create the folder
@@ -45,10 +51,17 @@ Run agent server
 java -jar atlassian-bamboo-agent-installer-9.1.1.jar http://localhost:8085/agentServer/
 ```
 
-**Attention: Create the application link using the service name, not localhost nor container name AND after installing each server**
+## Application Link
 
-Resource:
+https://community.atlassian.com/t5/Jira-articles/Running-Atlassian-server-product-on-Docker/ba-p/1209665
 
-- https://community.atlassian.com/t5/Jira-articles/Running-Atlassian-server-product-on-Docker/ba-p/1209665
+2023-01-31: Requested confirmation that "unfortunately, Atlassian's docker images don't support the configuration to the application link"
 
+When trying to add the application link between JIRA and BITBUCKET is failling...
 
+```
+We couldn't connect to Bitbucket, possibly because that instance is behind a misconfigured proxy.
+
+We couldn't connect to Jira, possibly because that instance is behind a misconfigured proxy.
+
+ ```
