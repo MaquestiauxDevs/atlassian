@@ -1,5 +1,11 @@
 # Atlassian Test Environment
 
+This project will instanciate with docker the following Atlassian servers in once
+- JIRA
+- BITBUCKET
+- CONFLUENCE
+- BAMBOO
+
 You will need to request trial keys via: https://my.atlassian.com/license/evaluation
 
 **The trial license are valid for 30 days (E.g. 30/Jan/2023 -> 28/Feb/2023)**
