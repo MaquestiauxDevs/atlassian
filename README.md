@@ -81,3 +81,7 @@ http://jira.internal/secure/admin/jira/ViewBambooApplicationLinks.jspa
 http://bitbucket.internal/plugins/servlet/applinks/listApplicationLinks
 http://confluence.internal/plugins/servlet/applinks/listApplicationLinks
 http://bamboo.internal/plugins/servlet/applinks/listApplicationLinks
+
+## URLs
+
+URL to this REPO: https://github.com/MaquestiauxTesting/atlassian
