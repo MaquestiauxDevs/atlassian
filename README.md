@@ -4,7 +4,7 @@ You will need to request trial keys via: https://my.atlassian.com/license/evalua
 
 **The trial license are valid for 30 days (E.g. 30/Jan/2023 -> 28/Feb/2023)**
 
-## Specific 
+## Start 
 
 Add host lines to the /etc/host of your machine before starting
 
@@ -30,6 +30,12 @@ Create the folder
  - bamboo
 
 The shell script **create_folder_structure.sh** will do it.
+
+Finally, run the docker compose command:
+
+```bash
+docker compose up --build -d
+```
 
 ## Postgresql (port:5432)
 
