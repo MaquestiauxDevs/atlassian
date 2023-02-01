@@ -91,3 +91,7 @@ http://bamboo.internal/plugins/servlet/applinks/listApplicationLinks
 ## URLs
 
 URL to this REPO: https://github.com/MaquestiauxTesting/atlassian
+
+## References
+
+https://community.atlassian.com/t5/Jira-articles/Running-Atlassian-server-product-on-Docker/ba-p/1209665/page/2#M8157
