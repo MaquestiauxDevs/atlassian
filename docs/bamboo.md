@@ -10,6 +10,10 @@ The container ***internal*** link is http://bamboo:8085
 
 https://confluence.atlassian.com/bamboo/bamboo-remote-agent-installation-guide-289276832.html
 
+Download agent server
+
+http://bamboo.internal/agentServer/agentInstaller/atlassian-bamboo-agent-installer-9.1.1.jar
+
 Run agent server
 
 ```shell
