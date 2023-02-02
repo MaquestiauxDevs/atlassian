@@ -16,7 +16,7 @@ sudo echo "
 " >> /etc/hosts
 ```
 
-Create the folder
+Create following folders for the data persistency:
  - postgresql
  - jira
  - bitbucket
