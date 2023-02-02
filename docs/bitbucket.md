@@ -17,3 +17,6 @@ Note:
 - the Bamboo should exist if the [same step](bamboo.md#Post-Configuration) has been done at the Bamboo level.
 
 Got to http://bitbucket.internal/plugins/servlet/applinks/listApplicationLinks and create the links.
+
+___
+[Back](../README.md) 

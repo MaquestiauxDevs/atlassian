@@ -16,3 +16,6 @@ Note:
 - the Jira should exist if the [same step](jira.md#Post-Configuration) has been done at the Jira level.
 
 Got to http://confluence.internal/plugins/servlet/applinks/listApplicationLinks  and create the links.
+
+___
+[Back](../README.md) 

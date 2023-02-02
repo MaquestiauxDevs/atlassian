@@ -15,3 +15,6 @@ You need to create application (**bi-directional**) links with [BitBucket](bitbu
 Got to http://jira.internal/plugins/servlet/applinks/listApplicationLinks for [Confluence](confluence.md) and [BitBucket](bitbucket.md)
 
 Got to http://jira.internal/secure/admin/jira/ViewBambooApplicationLinks.jspa for [Bamboo](bamboo.md)
+
+___
+[Back](../README.md) 
