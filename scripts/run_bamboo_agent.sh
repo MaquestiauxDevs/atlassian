@@ -1,0 +1,1 @@
+java -jar ./atlassian-bamboo-agent-installer-9.1.1.jar http://bamboo.internal/agentServer/
